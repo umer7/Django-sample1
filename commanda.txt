@@ -1,0 +1,23 @@
+python manage.py runserver
+
+python manage.py startapp music
+
+python manage.py migrate ..
+
+python manage.py makemigrations music ..
+
+python manage.py sqlmigrate music 0001
+
+a= album()
+a.artist="umer"
+a.save()
+python manage.py shell
+
+from music.models import Albums,Songs
+Album.objects.all()
+Album.object.filter(id=1)
+
+
+python manage.py createsuperuser
+umer1234
+
